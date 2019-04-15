@@ -1,0 +1,37 @@
+{
+    "name": "video-on-demand",
+    "version": "0.1.0",
+    "description": "Simple JavaScript media application built with React, NodeJS and Express.",
+    "author": {
+        "name": "Zaine Kingi",
+        "email": "rous6026nz@gmail.com"
+    },
+    "license": "MIT",
+    "scripts": {
+        "client": "cd client && yarn start",
+        "server": "nodemon server.js",
+        "dev": "concurrent --kill-others-on-fail \"yarn server\" \"yarn client\"",
+        "dev:server": "cd client && yarn build && cd .. && yarn start",
+        "start": "node server.js",
+        "heroku-post-build": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rous6026nz/video-on-demand-app.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rous6026nz/video-on-demand-app/issues"
+    },
+    "keywords": [
+        "node",
+        "express",
+        "create-react-app"
+    ],
+    "devDependencies": {
+        "concurrently": "^4.1.0"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4"
+    }
+}
