@@ -34,15 +34,11 @@ const App = () => {
         return console.log("Movie already added!", a)
       } else {
         setRecently([movie, ...recentlyView])
-        return console.log("Movie added! ", a)
       }
     } else {
       setRecently([movie])
-      return console.log("Movie added!", a)
     }
   }
-
-  console.log(recentlyView)
 
   // Build content helper function
   const handleBuildContent = arr => (
