@@ -1,0 +1,39 @@
+.CarouselContainer {
+    margin: 100px 0 0;
+    padding: 15px 0;
+    background: #f5f5f52f;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.CarouselHeading {
+    margin-left: 25px;
+}
+
+.Carousel {
+    display: block;
+    width: 100vw;
+    margin: 25px 0;
+}
+
+.CarouselInnerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .Carousel {
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    .CarouselInnerWrapper {
+        flex-basis: 0;
+        flex-wrap: nowrap;
+        width: max-content;
+    }
+}
