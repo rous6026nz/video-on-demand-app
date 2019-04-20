@@ -15,7 +15,7 @@ const VideoInfo = props => {
             <h2>{ props.title }</h2>
             <hr></hr>
             <p>{ props.description }</p>
-            <span className={ classes.ratingIcon }>{ props.parentalRating }</span>
+            <p>Rating: { props.parentalRating }</p>
             <p>Duration: { formatDuration(props.duration) }</p>
             <h3>Credits</h3>
             <hr></hr>
