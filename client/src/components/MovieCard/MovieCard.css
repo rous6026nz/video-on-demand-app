@@ -9,13 +9,24 @@
     background: #eaeaea;
     border-radius: 3px;
     overflow: hidden;
+    box-shadow: 0 6px 18px -5px rgba(0,0,0,.5);
+    transition: transform .5s;
 }
 
-.movieCardImg {
+.MoviePlayBtn {
+    height: 75px;
+    position: absolute;
+    z-index: 150;
+    transition: opacity .5s;
+    margin-top: 25%;
+}
+
+.MovieCardImg {
     width: 100%;
 }
 
-.movieCardInfo {
+.MovieCardInfo {
+    bottom: 0;
     box-sizing: border-box;
     width: 100%;
     padding: 5px;
@@ -23,7 +34,7 @@
     color: #fff;
 }
 
-.movieCardInfo h3 {
+.MovieCardInfo h3 {
     text-align: center;
     font-size: 1rem;
 }
@@ -31,6 +42,23 @@
 @media screen and (min-width: 768px) {
     .MovieCard {
         width: 300px;
-        margin: 0 3px;
+        margin: 0 5px;
     }
+
+    .MovieCard:hover {
+        transform-style: preserve-3d;
+        transform: rotateY(-3deg);
+        backface-visibility: visible;
+    }
+
+    .MoviePlayBtn {
+        opacity: 0;
+        margin-top: 200px;
+    }
+
+    .MovieCard:hover .MoviePlayBtn {
+        cursor: pointer;
+        opacity: 1;
+    }
+
 }

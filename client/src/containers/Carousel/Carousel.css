@@ -4,10 +4,14 @@
     background: #f5f5f52f;
     border-top: 1px solid #eaeaea;
     border-bottom: 1px solid #eaeaea;
+    scrollbar-width: none;
 }
 
 .CarouselHeading {
-    margin-left: 25px;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    line-height: 0;
+    margin-left: 3rem;
 }
 
 .Carousel {
@@ -23,12 +27,14 @@
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
+    perspective: 15000px;
 }
 
 @media screen and (min-width: 768px) {
     .Carousel {
         overflow-x: scroll;
         scrollbar-width: none;
+        padding: 25px 0;
     }
 
     .CarouselInnerWrapper {
