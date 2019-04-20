@@ -1,0 +1,24 @@
+.Video {
+    display: block;
+    width: 90vw;
+    height: auto;
+    margin: 10rem auto 0;
+}
+
+.Video > video {
+    width: 100% !important;
+}
+
+@media (min-width: 768px) {
+    .Video {
+        width: 65vw;
+        height: 50vh;
+        margin: 25vh 0 0;
+    }
+}
+
+@media (min-width: 988px) {
+    .Video {
+        margin-top: 15vh;
+    }
+}

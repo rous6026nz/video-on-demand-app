@@ -1,5 +1,7 @@
 .App {
   min-height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .AppHeader {
@@ -7,7 +9,9 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 500;
   height: 75px;
+  width: 100%;
   background-color: #282c34;
   box-shadow: 0 1px 10px #282c349f;
   display: flex;
