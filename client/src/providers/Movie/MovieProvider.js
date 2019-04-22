@@ -26,7 +26,7 @@ const MovieProvider = ({ children }) => {
             abortController.abort()
         }
 
-    }, [data])
+    }, [])
 
     const data = movieData.map((movie, index) => {
         return {

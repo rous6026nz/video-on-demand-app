@@ -20,7 +20,6 @@ const VideoModal = props => {
     // Fetch the current movies data
     const index = movies.findIndex(obj => obj.id === movieId)
     const currentMovieData = movies[index]
-    console.log(currentMovieData.credits)
     const credits = currentMovieData.credits.map((item, index) => {
         return item.name !== item.role ?
             <li key={ index }>{ item.name }<br />Role: { item.role }</li> :
