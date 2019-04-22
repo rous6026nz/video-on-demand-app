@@ -25,3 +25,8 @@
 .AppHeader h1 {
   font-size: 1.5rem;
 }
+
+/* Body hide overflow-x utility class */
+.hideOverflowX {
+  overflow-x: hidden;
+}

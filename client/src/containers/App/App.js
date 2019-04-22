@@ -16,6 +16,8 @@ const App = () => {
   useEffect(() => {
     const abortController = new AbortController()
 
+    document.body.style.overflowX = 'hidden'
+
     // Handle state changes.
     const handleStateChange = updates => {
       setData(updates.entries)
@@ -30,7 +32,7 @@ const App = () => {
       abortController.abort()
     }
 
-  }, [data])
+  }, [])
 
   // Build content helper function
   const handleBuildContent = arr => (
@@ -81,7 +83,7 @@ const App = () => {
         </header>
         <MovieProvider>
           <Carousel
-            carouselHeading="Our Top 30"
+            carouselHeading="New Releases"
             content={ movieList } />
 
           { recentlyView.length > 0 ?

@@ -61,7 +61,11 @@
         transform: rotateY(-8deg);
         backface-visibility: visible;
         cursor: pointer;
-        opacity: 1;
+        opacity: .5;
+    }
+
+    .MoviePlayBtn:hover {
+        opacity: 1 !important;
     }
 
 }
