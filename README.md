@@ -2,6 +2,15 @@
 
 A small React and Node carousel application providing the functionality to display and list a collection of videos, a modal to preview each videos movie and related information.
 
+- API being consumed: https://demo2697834.mockable.io/movies
+
+## Prerequisities
+
+To ensure a succesful build you must first ensure you have your development environment setup, below is a list of requirements for this project:
+
+- You have NodeJS installed on your system - [You can download from NodeJS](https://nodejs.org/en/). NodeJS provides a package manager `NPM` which is used to install and manage project dependencies as well as running the project scripts.
+- This project was developed using [Yarn Package Manager](https://yarnpkg.com/en/), this dependency can be installed using `NPM` by running the command `npm install yarn` from your Terminal or Command Prompt application.
+
 ## Set-up and Build
 
 1. Pull down the repository from [GitHub](https://github.com/rous6026nz/video-on-demand-app)
@@ -37,6 +46,10 @@ A small React and Node carousel application providing the functionality to displ
 
 - Move alot of the logic inside the App container responsible for handling the populating of the data into the carousels and handling the `Recently Watched` over to the carousel container component.
 
+#### Browser Support
+
+The initial intention of this application was to meet requirements of the task which included being able to build without errors in MacOS/Linux environment and support the latest version of the Chrome browser. However, I intend on extending this to support most versions of Chrome, Firefox, Safari and Edge browsers for both Windows and MacOS platforms.
+
 ## Technolgy Stack
 
 - HTML
@@ -46,3 +59,7 @@ A small React and Node carousel application providing the functionality to displ
 - NodeJS
 - Express
 - Yarn
+
+#### Demo
+
+Coming soon ;-)
