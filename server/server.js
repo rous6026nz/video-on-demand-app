@@ -16,12 +16,4 @@ app.get('/api/movies', (req, res) => {
         .catch(err => res.send(err.message))
 })
 
-// Get a movie by ID
-app.get('/api/movies/:id', (req, res) => {
-    const id = req.params.id
-    makeApiCall(movies + `/${id}`)
-        .then(data => res.send(data))
-        .catch(err => res.send(err.message))
-})
-
 app.listen(port, () => console.log(`Listening on port ${port}`))

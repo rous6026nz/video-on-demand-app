@@ -6,7 +6,7 @@ const Video = props => {
 
     return (
         <div className={ classes.Video } >
-            <video autoPlay="true" controls >
+            <video autoPlay controls >
                 <source src={ props.video } type="video/mp4" />
                 <p>Sorry, your browser doesn't support embedded videos.</p>
             </video>

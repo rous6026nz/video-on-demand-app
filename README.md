@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Video On-Demand
 
-## Available Scripts
+A small React and Node carousel application providing the functionality to display and list a collection of videos, a modal to preview each videos movie and related information.
 
-In the project directory, you can run:
+## Set-up and Build
 
-### `npm start`
+1. Pull down the repository from [GitHub](https://github.com/rous6026nz/video-on-demand-app)
+2. Open a new Terminal or Command Prompt session in the recently created `video-on-demand-app` folder.
+3. Run the following command in your Terminal or Command Prompt application `yarn` to install all the required dependencies to get the application up and running.
+4. Run `yarn dev` to start the development server, build and run the application. This starts the application in development mode with live reloading.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features Implemented
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Loading data from the API provided.
+- The user is able to select and view a movie in a modal or in fullscreen.
+- Displaying a second 'Recently Watched' carousel showing the recently viewed movies, which updates and re-sorts the contents with the most recent movie positioned at the start.
+- The layout is responsive with a mobile-first approach.
 
-### `npm test`
+### Features Not Implemented
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Full functioning carousel.
+- Accessibility - User being able to navigate carousel and select a video using the keyboard arrows/Enter keys.
 
-### `npm run build`
+## Bugs
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The current implementation for the carousel back control is not working as intended, causing the carousel to be positioned at the incorrect position.
+- Current `ref` for the carousel `inner-wrapper` is not returning the HTML element, resulting in the hard coding of the width value in state.
+- Due to the issue highlighted above, the 'Recently Watched' carousel always displays a forward carousel control and triggers the same behaviour as if it was filled with content.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Technolgy Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- HTML
+- CSS
+- JavaScript (ES6)
+- ReactJS - including React Hooks and CSS Modules
+- NodeJS
+- Express
+- Yarn
