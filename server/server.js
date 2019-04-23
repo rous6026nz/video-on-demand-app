@@ -16,4 +16,4 @@ app.get('/api/movies', (req, res) => {
         .catch(err => res.send(err.message))
 })
 
-app.listen(port, () => console.log(`Listening on port ${port}`))
+app.listen(port)
