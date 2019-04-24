@@ -16,8 +16,6 @@ const App = () => {
   useEffect(() => {
     const abortController = new AbortController()
 
-    document.body.style.overflowX = 'hidden'
-
     // Handle state changes.
     const handleStateChange = updates => {
       setData(updates.entries)
